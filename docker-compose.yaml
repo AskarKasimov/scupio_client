@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  baker:
+    build:
+      context: ./scupio
+      args:
+        REACT_APP_CACHING: ${CACHING}
+        REACT_APP_API_ADDRESS: ${API_ADDRESS}
+    container_name: scupio_client
+    restart: on-failure
+    ports:
+      - '8000:5050'
