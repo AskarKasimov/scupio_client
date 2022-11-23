@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Inter";
+    src: url("media/Inter.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    font-family: "Inter";
+    font-size: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:focus-visible {
+    outline: 0;
+}
+
+a {
+    display: inline-block;
+    &:visited {
+        color: inherit;
+    }
+}
+
+svg,
+img {
+    vertical-align: middle;
+}
+
+#root {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}

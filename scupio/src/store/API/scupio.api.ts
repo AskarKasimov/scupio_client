@@ -1,4 +1,4 @@
-import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { hello } from "./models.api";
 
 export const scupioAPI = createApi({
@@ -15,4 +15,4 @@ export const scupioAPI = createApi({
     })
 });
 
-export const {useDBversionQuery} = scupioAPI;
+export const { useDBversionQuery } = scupioAPI;
