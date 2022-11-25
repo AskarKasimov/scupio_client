@@ -6,11 +6,28 @@ import { store } from './store';
 import "./index.scss";
 
 import App from './App';
+import Authorization from './Authorization/Authorization';
+import Registration from './Registration/Registration';
+import Authentification from './Authentification/Authentification';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Authentification />,
+    children: [
+      {
+        index: true,
+        element: <Authorization />
+      },
+      {
+        path: "sign-up",
+        element: <Registration />
+      },
+      {
+        path: "app",
+        element: <App />
+      }
+    ]
   }
 ]);
 
